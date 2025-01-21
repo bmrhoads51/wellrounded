@@ -1,14 +1,10 @@
-// Fetch data dynamically and display it
-fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-        const contentDiv = document.getElementById('dynamic-content');
-        contentDiv.innerHTML = `
-            <h2>${data.title}</h2>
-            <p>${data.description}</p>
-        `;
-    })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-        document.getElementById('dynamic-content').textContent = 'Failed to load content.';
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('dynamicButton');
+    const content = document.getElementById('dynamicContent');
+
+    if (button) {
+        button.addEventListener('click', () => {
+            content.innerHTML = '<p>You clicked the button! Dynamic content loaded.</p>';
+        });
+    }
+});
