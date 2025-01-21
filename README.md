@@ -1,2 +1,2 @@
 # test-well-rounded
-Test website for well-rounded learning idea
+Website for well-rounded learning idea for research, fun learning, and exploring
